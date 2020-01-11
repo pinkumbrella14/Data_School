@@ -32,3 +32,6 @@ $ git commit -m "your note here"
 #check commit and log to make sure nothing else to add and that your commit is there
 $ git status
 $ git log
+
+#to get github repo up to date
+$ git push origin master
