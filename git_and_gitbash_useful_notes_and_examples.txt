@@ -35,3 +35,17 @@ $ git log
 
 #to get github repo up to date
 $ git push origin master
+
+#FORKS DO NOT AUTOMATICALLY STAY IN SYNC!
+#to sync your fork with the original repo, the changes in the original repo need to be fetched and merged (aka pull)
+#first, check origins
+$ git remote -v
+
+#need to copy the original url of the upstream repo (even if it's one of your own), then
+$ git remote add upstream paste_url_or_original_repo
+#check with
+$ git remote -v
+#now fetch
+$ git fetch upstream
+#merge changes
+$ git merge upstream/master
