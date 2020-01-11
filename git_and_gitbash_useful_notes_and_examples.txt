@@ -1,0 +1,34 @@
+#notes
+#paste in stuff just hold the 'insert or 0' key on the num keyboard
+
+#navigate to your directory in Git Bash
+$ ~/OneDrive/Documents
+
+#clone github repo
+$ git clone 'webiste here'
+#can then cd and ls in the repo
+
+#check your remotes 
+$ git remote -v
+	#if you don't have an origin, can add it
+	$ git remote add origin 'your repo website here'
+
+
+#working with new files and uploading them 
+
+#to create a new file (like an .md file), type
+$ touch file_name.file_ext
+
+#to see status of files, run
+$ git status
+ 
+#stage the files for upload
+$ git add file_name.file_ext (to add one file at a time)
+$ git add . (adds all files at once)
+
+#add files and write the corresponding message
+$ git commit -m "your note here"
+
+#check commit and log to make sure nothing else to add and that your commit is there
+$ git status
+$ git log
